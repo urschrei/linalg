@@ -21,7 +21,7 @@ Data is contained in pickled pandas objects in the data directory.
 
 [coordinates.pickle](data/coordinates.pickle) contains observed coordinates. This DataFrame is updated with affine and similarity residuals, and new `x` and `y` values for each. These are then plotted:
 
-![results](results.png "Least Squares Fit Results of an Affine Transformation")
+![results](results.png "This graph just screams 'sleep deprived!', doesn't it?")
 
 It's apparent that the affine transformation is the more accurate of the two.
 
