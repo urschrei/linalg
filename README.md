@@ -23,11 +23,11 @@ Data is contained in pickled pandas objects in the data directory.
 
 ![results](results.png "This graph just screams 'sleep deprived!', doesn't it?")
 
-It's apparent that the affine transformation is the more accurate of the two.
-
+It's apparent from the scatter plot that the affine transformation is the more accurate of the two, however we can numerically compare the quality of the two transformations by obtaining the sigma zero value for each (see notebook):  
+**Standard error of the affine transform**: 0.0048
+**Standard error of the similarity transform**: 0.0254
 
 You can see the IPython notebook used to generate the figure [here](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/statsmodels.ipynb).
 
 **TODO**:
-- Compare the quality of the two transforms
 - Get some sleep
