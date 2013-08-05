@@ -7,7 +7,7 @@ See here for motivation: http://stats.stackexchange.com/questions/66538/using-pa
 `b`, `b vector`, `Y`: the outcome vector, referred to as *endogenous* in statsmodels. The response variable, or *regressand*.  
 
 See the [docs](http://statsmodels.sourceforge.net/devel/endog_exog.html) for a complete explanation.
-It should also be noted that the signatures of the [numpy.linalg.lstsq](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html) and [statsmodels.OLS](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.OLS.html#statsmodels.regression.linear_model.OLS) methods are reversed: numpy expects the design matrix followed by the outcome vector, while statsmodels expects the outcome vector followed by the design matrix.
+It should also be noted that the signatures of the [numpy.linalg.lstsq](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html) and [statsmodels.WLS](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.WLS.html#statsmodels.regression.linear_model.WLS) methods are reversed: numpy expects the design matrix followed by the outcome vector, while statsmodels expects the outcome vector followed by the design matrix.
 
 The similarity transform is given by the following two equations:
 
@@ -29,6 +29,5 @@ It's apparent that the affine transformation is the more accurate of the two.
 You can see the IPython notebook used to generate the figure [here](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/statsmodels.ipynb).
 
 **TODO**:
-- Incorporate a weight matrix
 - Compare the quality of the two transforms
 - Get some sleep
