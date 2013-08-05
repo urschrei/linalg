@@ -9,6 +9,14 @@ See here for motivation: http://stats.stackexchange.com/questions/66538/using-pa
 See the [docs](http://statsmodels.sourceforge.net/devel/endog_exog.html) for a complete explanation.
 It should also be noted that the signatures of the `numpy.linalg.lstsq` and `statsmodels.OLS` methods are reversed: `numpy` expects the design matrix, followed by the outcome vector, while `statsmodels` expects the outcome vector, followed by the design matrix.
 
+The similarity transform is given by the following two equations:
+
+![similarity](http://latex.codecogs.com/png.latex?f_i%28a%2C%20b%2C%20%5CDelta%7Bx%7D%29%20%3D%20ax_i-by_i&plus;%5CDelta%7Bx%7D%5C%5C%20f_i%28a%2C%20b%2C%20%5CDelta%7By%7D%29%20%3D%20bx_i&plus;ay_i&plus;%5CDelta%7By%7D "Similarity Transform")
+
+The affine transform is given by the following two equations:
+
+![affine](http://latex.codecogs.com/png.latex?f_i%28a_0%2Ca_1%2Ca_2%29%20%3D%20a_0&plus;a_1x_i&plus;a_2y_i%5C%5C%20f_i%28b_0%2Cb_1%2Cb_2%29%20%3D%20b_0&plus;b_1x_i&plus;b_2y_i "Affine Transform")
+
 Data is contained in pickled pandas objects in the data directory.
 
 [coordinates.pickle](data/coordinates.pickle) contains observed coordinates, residuals, and updated coordinates, which are the result of a [numpy.linalg.lstsq()](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html) operation on [A_matrix.pickle](data/A_matrix.pickle), [b_vector.pickle](data/b_vector.pickle), which returns values for `a0, a1, a2, b0, b1, b2`. This [vector](data/params.pickle) (`x`) is used to calculate residuals using `Ax-b`. The resulting residual vector contains all `x` residuals, followed by all `y` residuals. These are added to the existing `x` and `y` coordinates to produce updated positions, which can be seen as white crosses in the figure below.
