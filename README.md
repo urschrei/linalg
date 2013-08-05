@@ -9,6 +9,8 @@ As of 05 August 2013, [coordinates.pickle](data/coordinates.pickle) contains coo
 
 ![results](results.png "Least Squares Fit Result of an Affine Transformation")
 
+You can see the IPython notebook used to generate the figure [here](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/plotting.ipynb).
+
 **TODO**:
 - Make it work using [statsmodels](http://statsmodels.sourceforge.net) and [patsy](http://patsy.readthedocs.org/en/latest/overview.html)
 - Incorporate a weight matrix
