@@ -1,4 +1,4 @@
-This is a repo for messing about with least squares methods in Python
+# This is a repo for messing about with least squares methods in Python #
 
 See here for motivation: http://stats.stackexchange.com/questions/66538/using-pandas-and-statsmodels-for-ordinary-least-squares
 
@@ -8,3 +8,8 @@ As of 05 August 2013, [coordinates.pickle](data/coordinates.pickle) contains coo
 `Ax-b`. The resulting residual vector contains all `x` residuals, followed by all `y` residuals. These can be added to the existing `x` and `y` coordinates to produce updated positions, which can be seen as orange crosses in the picture below.
 
 ![results](results.png "Least Squares Fit Result")
+
+**TODO**:
+- Make it work using [statsmodels](http://statsmodels.sourceforge.net) and [patsy](http://patsy.readthedocs.org/en/latest/overview.html)
+- Incorporate a weight matrix
+- Get some sleep
