@@ -7,7 +7,7 @@ See here for motivation: http://stats.stackexchange.com/questions/66538/using-pa
 `b`, `b vector`, `Y`: the outcome vector, referred to as *endogenous* in statsmodels. The response variable, or *regressand*.  
 
 See the [docs](http://statsmodels.sourceforge.net/devel/endog_exog.html) for a complete explanation.
-It should also be noted that the signatures of the `numpy.linalg.lstsq` and `statsmodels.OLS` methods are reversed: `numpy` expects the design matrix, followed by the outcome vector, while `statsmodels` expects the outcome vector, followed by the design matrix.
+It should also be noted that the signatures of the [numpy.linalg.lstsq](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html) and statsmodels.OLS](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.OLS.html#statsmodels.regression.linear_model.OLS) methods are reversed: numpy expects the design matrix followed by the outcome vector, while statsmodels expects the outcome vector followed by the design matrix.
 
 The similarity transform is given by the following two equations:
 
@@ -19,13 +19,12 @@ The affine transform is given by the following two equations:
 
 Data is contained in pickled pandas objects in the data directory.
 
-[coordinates.pickle](data/coordinates.pickle) contains observed coordinates, residuals, and updated coordinates, which are the result of a [numpy.linalg.lstsq()](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html) operation on [A_matrix.pickle](data/A_matrix.pickle), [b_vector.pickle](data/b_vector.pickle), which returns values for `a0, a1, a2, b0, b1, b2`. This [vector](data/params.pickle) (`x`) is used to calculate residuals using `Ax-b`. The resulting residual vector contains all `x` residuals, followed by all `y` residuals. These are added to the existing `x` and `y` coordinates to produce updated positions, which can be seen as white crosses in the figure below.
-
-The orange crosses are the result of running [statsmodels.OLS().fit()](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.OLS.html#statsmodels.regression.linear_model.OLS) on the same data set, splitting the residuals into two columns in the `coords` DataFrame, and generating updated `x` and `y` values by subtracting them from the original observations.
-
-The red triangles are the result of a similarity transform, using [statsmodels.OLS().fit()](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.OLS.html#statsmodels.regression.linear_model.OLS):
+[coordinates.pickle](data/coordinates.pickle) contains observed coordinates. This DataFrame is updated with affine and similarity residuals, and new `x` and `y` values for each. These are then plotted:
 
 ![results](results.png "Least Squares Fit Results of an Affine Transformation")
+
+It's apparent that the affine transformation is the more accurate of the two.
+
 
 You can see the IPython notebook used to generate the figure [here](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/statsmodels.ipynb).
 
