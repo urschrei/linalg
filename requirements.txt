@@ -1,10 +1,10 @@
 distribute
-pandas
-matplotlib
 numpy
 scipy
-patsy
+pandas
 ipython
 pyzmq
 tornado
-statsmodels==0.5.0
+patsy
+statsmodels
+matplotlib
