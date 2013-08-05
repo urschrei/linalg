@@ -1,0 +1,8 @@
+pandas
+matplotlib
+numpy
+scipy
+patsy
+ipython
+pyzmq
+tornado
