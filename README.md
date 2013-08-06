@@ -17,11 +17,11 @@ The design matrix for the affine transform is given by the following two equatio
 
 ![affine](http://latex.codecogs.com/png.latex?f_i%28a_0%2Ca_1%2Ca_2%29%20%3D%20a_0&plus;a_1x_i&plus;a_2y_i%5C%5C%20f_i%28b_0%2Cb_1%2Cb_2%29%20%3D%20b_0&plus;b_1x_i&plus;b_2y_i "Affine Transform")
 
-The **b** vector for both design matrices is identical: all x observations, followed by all y observations. The covariance matrix, **Cb**, must be given to statsmodels as a vector, in the form of the inverse of the variance of all *x* observations, followed by the variance of all *y* observations.
+The **b** vector for both design matrices is identical: all *x* observations, followed by all *y* observations. The covariance matrix, **Cb**, must be given to statsmodels as a vector, in the form of the inverse of the variance of all *x* observations, followed by the variance of all *y* observations.
 
 Data is contained in pickled pandas objects in the data directory.
 
-[coordinates.pickle](data/coordinates.pickle) contains observed coordinates. This DataFrame is updated with affine and similarity residuals, and new `x` and `y` values for each transform.
+[coordinates.pickle](data/coordinates.pickle) contains observed coordinates. This DataFrame is updated with affine and similarity residuals, and new *x* and *y* values for each transform.
 
 It's apparent from the scatter plot that the affine transformation is the more accurate of the two, however we can compare the quality of the two transformations by obtaining the sigma zero value, which is the standard error of the *weighted residual variance* for each transform, and can be calculated by taking the square root of the `mse_resid` or `scale` attribute of the result object:  
 **Standard error of the affine transform**: 0.0048  
