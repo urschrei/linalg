@@ -14,11 +14,13 @@ Equations and matrix shapes for data used in an **ordinary least squares** opera
 
 Data is contained in pickled pandas objects in the data directory.
 
-[coordinates.pickle](data/coordinates.pickle) contains observed coordinates.
+[coordinates.pickle](data/coordinates.pickle) contains observed coordinates for the weighted least squares transform, while [year_distance.pickle](data/year_distance.pickle) contains the data for the ordinary least squares transform.  
 
 It's apparent from the scatter plot shown at the top of the page that the affine transformation is the more accurate of the two, however we can compare the quality of the two transformations by obtaining the sigma zero value, which is the standard error of the *weighted residual variance* for each transform, and can be calculated by taking the square root of the `mse_resid` or `scale` attribute of the result object:  
 
 **Standard error of the affine transform**: 0.0048  
 **Standard error of the similarity transform**: 0.0254
 
+The ordinary least squares fit example is just a dummy set of measurements, regressed against the year in which they were made.
+Green points on the plot show actual measurements, while the fuchsia-coloured line shows the best fit following least squares treatment. Turqoise points are predicted positions of measurements made at different times of the year.
 ![OLS](OLS.png "Pretty simple")
