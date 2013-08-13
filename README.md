@@ -14,7 +14,7 @@ Equations and matrix shapes for data used in an **ordinary least squares** opera
 
 Data is contained in pickled pandas objects in the data directory.
 
-[coordinates.pickle](data/coordinates.pickle) contains observed coordinates. This DataFrame is updated with affine and similarity residuals, and new *x* and *y* values for each transform.
+[coordinates.pickle](data/coordinates.pickle) contains observed coordinates.
 
 It's apparent from the scatter plot shown at the top of the page that the affine transformation is the more accurate of the two, however we can compare the quality of the two transformations by obtaining the sigma zero value, which is the standard error of the *weighted residual variance* for each transform, and can be calculated by taking the square root of the `mse_resid` or `scale` attribute of the result object:  
 
