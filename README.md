@@ -1,4 +1,4 @@
-![results](results.png "This graph just screams 'sleep deprived!', doesn't it?")
+![results](WLS.png "This graph just screams 'sleep deprived!', doesn't it?")
 
 # This is a repo for messing about with least squares methods in Python #
 
