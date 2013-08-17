@@ -22,5 +22,5 @@ It's apparent from the scatter plot shown at the top of the page that the affine
 **Standard error of the similarity transform**: 0.0254
 
 The ordinary least squares fit example is just a dummy set of measurements, regressed against the year in which they were made.
-Green points on the plot show actual measurements, while the fuchsia-coloured line shows the best fit following least squares treatment. Turqoise points are predicted positions of measurements made at different times of the year.
+Green points on the plot show actual measurements, while the fuchsia-coloured line shows the best fit following least squares treatment.  
 ![OLS](OLS.png "Pretty simple")
