@@ -3,8 +3,8 @@
 # This is a repo for messing about with least squares methods in Python #
 
 ## Terminology ##
-`A`, `A matrix`, `X`: the design matrix, referred to as *exogenous* in statsmodels. The explanatory variable, or *regressors*.  
-`b`, `b vector`, `Y`: the outcome vector, referred to as *endogenous* in statsmodels. The response variable, or *regressand*.  
+`A`, `A matrix`, `X`: the design matrix, referred to as *exogenous* in the [statsmodels](http://statsmodels.sourceforge.net/stable/) module. The explanatory variable, or *regressors*.  
+`b`, `b vector`, `Y`: the outcome vector, referred to as *endogenous* in the statsmodels module. The response variable, or *regressand*.  
 
 See the [docs](http://statsmodels.sourceforge.net/devel/endog_exog.html) for a complete explanation.
 It should also be noted that the signatures of the [numpy.linalg.lstsq](http://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.lstsq.html) and [statsmodels.WLS](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.WLS.html#statsmodels.regression.linear_model.WLS) methods are reversed: numpy expects the design matrix followed by the outcome vector, while statsmodels expects the outcome vector followed by the design matrix.
