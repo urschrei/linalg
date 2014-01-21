@@ -1,6 +1,6 @@
 ![results](WLS.png "This graph just screams 'sleep deprived!', doesn't it?")
 
-# This is a repo for messing about with least squares methods in Python #
+# Least Squares Estimation in Python, using [Pandas](http://pandas.pydata.org) and [Statsmodels](http://statsmodels.sourceforge.net) #
 
 ## Terminology ##
 `A`, `A matrix`, `X`: the design matrix, referred to as *exogenous* in the [statsmodels](http://statsmodels.sourceforge.net/stable/) module. The explanatory variable, or *regressors*.  
