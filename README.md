@@ -12,9 +12,9 @@ Equations and matrix shapes for data used in a **weighted least squares** operat
 
 Equations and matrix shapes for data used in an **ordinary least squares** operation, which fits a line through a set of points, are shown at the top of this [IPython notebook](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/ordinary_least_squares.ipynb).
 
-Data is contained in pickled pandas objects in the data directory.
+Data is contained in CSVs in the data directory.
 
-[coordinates.pickle](data/coordinates.pickle) contains observed coordinates for the weighted least squares transform, while [year_distance.pickle](data/year_distance.pickle) contains the data for the ordinary least squares transform.  
+[coordinates.csv](data/coordinates.csv) contains observed coordinates for the weighted least squares transform, while [year_distance.pickle](data/year_distance.pickle) contains the data for the ordinary least squares transform.  
 
 The matrices are described for the least squares methods using a [patsy](http://patsy.readthedocs.org/en/latest/overview.html) formula, which is similar to those used in *R*, though they can also be specified in terms of endog/exog (or `y` and `X` etc.) using the uppercase versions of the methods found in `statsmodels.formula.api`
 
