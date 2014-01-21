@@ -14,7 +14,7 @@ Equations and matrix shapes for data used in an **ordinary least squares** opera
 
 Data is contained in CSVs in the data directory.
 
-[coordinates.csv](data/coordinates.csv) contains observed coordinates for the weighted least squares transform, while [year_distance.pickle](data/year_distance.pickle) contains the data for the ordinary least squares transform.  
+[coordinates.csv](data/coordinates.csv) contains observed coordinates for the weighted least squares transform, while [year_distance.csv](data/year_distance.csv) contains the data for the ordinary least squares transform.  
 
 The matrices are described for the least squares methods using a [patsy](http://patsy.readthedocs.org/en/latest/overview.html) formula, which is similar to those used in *R*, though they can also be specified in terms of endog/exog (or `y` and `X` etc.) using the uppercase versions of the methods found in `statsmodels.formula.api`
 
