@@ -1,4 +1,4 @@
-[![WLS](WLS.png)](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/weighted_least_squares.ipynb" Affinity.")
+[![WLS](WLS.png)](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/weighted_least_squares.ipynb "Affinity.")
 
 # Least Squares Estimation in Python, using [Pandas](http://pandas.pydata.org) and [Statsmodels](http://statsmodels.sourceforge.net) #
 
@@ -28,4 +28,4 @@ It's apparent from the scatter plot shown at the top of the page that the affine
 The ordinary least squares fit example is just a dummy set of measurements, regressed against the year in which they were made.
 Green points on the plot show actual measurements, while the fuchsia-coloured line shows the best fit following least squares treatment.  
 
-[![OLS](OLS.png)](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/ordinary_least_squares.ipynb" Pretty Simple.")
+[![OLS](OLS.png)](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/ordinary_least_squares.ipynb "Pretty Simple.")
