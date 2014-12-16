@@ -4,7 +4,8 @@
 
 Theory, equations and matrix shapes for data used in an **ordinary least squares** operation which fits a line through a set of points representing measured distances are shown at the top of this [IPython notebook](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/ordinary_least_squares.ipynb).
 
-Theory, equations and matrix shapes for data used in a **weighted least squares** operation which compares the accuracy of a similarity and affine transform of observed *x* and *y* coordinates are shown at the top of this [IPython notebook](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/weighted_least_squares.ipynb).
+Theory, equations and matrix shapes for data used in a **weighted least squares** operation which compares the accuracy of a similarity and affine transform of observed *x* and *y* coordinates are shown at the top of this [IPython notebook](http://nbviewer.ipython.org/urls/raw.github.com/urschrei/linalg/master/notebooks/weighted_least_squares.ipynb).  
+This notebook also demonstrates the use of estimated parameters to calculate transformed coordinates of new input points, using both statsmodels `predict()` function, and manually, using a transformation matrix.
 
 ## Terminology ##
 `A`, `A matrix`, `X`: the design matrix, referred to as *exogenous* in the [statsmodels](http://statsmodels.sourceforge.net/stable/) module. The explanatory variable, or *regressors*.  
