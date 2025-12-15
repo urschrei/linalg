@@ -1,0 +1,21 @@
+[project]
+name = "linalg"
+version = "0.1.0"
+description = "Ordinary and Weighted Least Squares Examples"
+readme = "README.md"
+authors = [
+    { name = "Stephan Hügel", email = "shugel@tcd.ie" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.10.0",
+    "pandas>=2.2.3",
+    "statsmodels>=0.14.6",
+    "jupyterlab>=4.5.0",
+    "numpy>=2.1.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
