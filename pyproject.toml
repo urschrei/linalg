@@ -15,7 +15,3 @@ dependencies = [
     "jupyterlab>=4.5.0",
     "numpy>=2.1.2",
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
