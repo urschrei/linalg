@@ -8,10 +8,10 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "ipykernel>=6.29.5",
-    "matplotlib>=3.10.0",
-    "pandas>=2.2.3",
-    "statsmodels>=0.14.6",
-    "jupyterlab>=4.5.0",
-    "numpy>=2.1.2",
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "statsmodels>=0.15.0",
+    "jupyterlab>=4.6.4",
+    "numpy>=2.5.4",
 ]
